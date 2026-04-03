@@ -1,33 +1,37 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "eu.ansvar/slovak-data-protection-mcp",
-  "description": "Query ÚOOÚ SR decisions, sanctions, and guidance on data protection and GDPR enforcement in Slovakia",
+  "description": "ÚOOÚ SR (Slovak data protection authority) MCP server — decisions, sanctions, and guidance on GDPR enforcement in Slovakia",
   "repository": {
     "url": "https://github.com/Ansvar-Systems/slovak-data-protection-mcp",
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "keywords": [
-    "uoou-sk",
-    "slovak-data-protection",
-    "gdpr",
+    "data protection",
     "slovakia",
-    "data-protection",
-    "privacy",
-    "sanctions",
+    "regulation",
     "compliance",
-    "mcp",
-    "ansvar"
+    "mcp"
   ],
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@ansvar/slovak-data-protection-mcp",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "transport": {
         "type": "stdio"
+      }
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/slovak-data-protection-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://mcp.ansvar.eu/slovak-data-protection/mcp"
       }
     }
   ]
